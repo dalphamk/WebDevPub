@@ -1,0 +1,82 @@
+<!--
+  Author : Alpha Mamadou Diallo
+  Version : 1.0
+  Date : February 2023
+
+  Description : This section of the HTML code contains the structure of the homepage of the merch
+  for an imaginary clothing brand.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The K Collection index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <span class="nav-option-container">
+                <span><a href="FlexAndGrid.html">CLUB</a></span>
+                <span><a href="FlexAndGrid.html">ARTISTS</a></span>
+            </span>
+
+            <span class="brand-logo"> <img src="../static/media/brand-logo.jpg" alt="ICO"
+            width="50px" height="50px">
+            </span>
+
+            <span class="nav-shop-container">
+                <span><input type="text" placeholder="search product"></span>
+                <span><button type="button">🛒</button></span>
+            </span>
+        </nav>
+
+        <div class="merch-vid-container">
+            <img src="../static/media/merch.gif" class="merch-gif">
+            <button type="button" class="shop-now">SHOP NOW</button>
+        </div>
+    </header>
+
+    <main>
+        <h2>COLLECTION</h2>
+        <hr>
+        <section class="merch-container">
+            <a><img src="../static/media/merch-1.avif" class="merch-item" id="merch-1"></a>
+            <a><img src="../static/media/merch-2.webp" class="merch-item" id="merch-2"></a>
+            <a><img src="../static/media/merch-3.webp" class="merch-item" id="merch-3"></a>
+            <a><img src="../static/media/merch-4.webp" class="merch-item" id="merch-4"></a>
+        </section>
+
+        <button class="see-all">SEE ALL</button>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="foot-option-container">
+            <span class="socials-link">
+                <img src="../static/media/brand-logo.jpg" alt="ICO">
+                <div class="socials-medias">
+                    <a href="https://instagram.com"><img src="../static/media/IG.png"></a>
+                    <a href="https://youtube.com"><img src="../static/media/YT.jpg"></a>
+                    <a href="https://x.com"><img src="../static/media/X.webp"></a>
+                </div>
+            </span>
+
+            <span class="TOS-container">
+                <div><a href="FlexAndGrid.html">RETURNS & SHIPPING</a></div>
+                <div><a href="FlexAndGrid.html">PRIVACY POLICY</a></div>
+                <div><a href="FlexAndGrid.html">TERMS OF USE</a></div>
+                <div><a href="FlexAndGrid.html">CONTACT US</a></div>
+            </span>
+
+            <span class="newsletter-container">
+                <div>Want to get notified whenever we drop some heat?<br> Subscribe to our newsletters now!</div>
+                <input type="email" placeholder="Enter your email" class="input-mail">
+                <input type="submit" value="SUBSCRIBE" class="sub-newsletter">
+            </span>
+        </div>
+        <div class="copyright-container">&copy; 2024 The K. Collection. All rights reserved. Powered by ASCENSION, INC.</div>
+    </footer>
+</body>
+</html>

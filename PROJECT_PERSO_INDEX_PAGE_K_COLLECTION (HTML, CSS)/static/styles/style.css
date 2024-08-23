@@ -1,0 +1,232 @@
+/*This is the styling sheet for the index page of the K collection*/
+
+*{
+    margin: 0px;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background-color: black;
+}
+.nav-container{
+    /*display flex turns an element into a flexible container, allowing you to arrange its child elements (flex items)
+    in a row or column and control their alignment, spacing, and sizing.
+    Note: 1 DIMENSIONAL so it only goes in one direction (either row or column)*/
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.nav-option-container{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-option-container span a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-option-container span a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.nav-shop-container{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-shop-container input{
+    border-radius: 15px;
+    height: 30px;
+}
+.nav-shop-container button{
+    height: 30px;
+    border-radius: 3px;
+    /*margin-right: 10px;*/
+}
+.nav-shop-container button:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 5px 5px 2px gray;
+    transition: .3s;
+}
+
+.merch-vid-container{
+    position: relative;
+}
+.merch-vid-container img{
+    width: 100%;
+    display: block;
+}
+.merch-vid-container .shop-now{
+    position: absolute;
+    bottom: 20%; /* Position the button at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    padding: 30px 40px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+    background-color: black;
+    border: 1px solid white;
+}
+.merch-vid-container .shop-now:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 2px gray;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+main{
+    background-color: black;
+    padding-top: 70px;
+}
+main .see-all{
+    display: block;
+    padding: 20px 40px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-top: 70px;
+    margin-left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+}
+main .see-all:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    box-shadow: 7px 7px 2px gray;
+    border: 1px solid white;
+    transition: .3s;
+}
+main h2, hr{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.merch-container{
+    /* display grid turns an element into a grid container, allowing you to create complex,
+    two-dimensional layouts with rows and columns.
+    Note: 2 DIMENSIONAL so it's arranged in both rows and columns*/
+    display: grid;
+    /* defines the scale of each column
+    here it's 2 column of 300px*/
+    grid-template-columns: 600px 600px;
+    /* defines the scale of each row
+    here it's 2 rows of 300px*/
+    grid-template-rows: 600px 600px;
+
+    justify-content: space-around;
+    row-gap: 30px;
+}
+.merch-container .merch-item{
+    width: 550px;
+    height: 550px;
+}
+.merch-container .merch-item:hover{
+    cursor: pointer;
+    box-shadow: 15px 15px 2px gray;
+    transition: .3s;
+}
+.merch-container .merch-item #merch-1{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.merch-container .merch-item #merch-2{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.merch-container .merch-item #merch-3{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.merch-container .merch-item #merch-4{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+footer{
+    padding-top: 70px;
+    background-color: black;
+    color: white;
+    margin-top: 70px;
+}
+footer hr{
+    margin-bottom: 70px;
+}
+.foot-option-container{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-option-container .socials-link img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.foot-option-container .socials-link .socials-medias{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-option-container .socials-link .socials-medias a img:hover{
+    box-shadow: 2px 2px 2px gray;
+    transition: .3s;
+}
+.foot-option-container .socials-link a img{
+    width: 30px;
+    height: 30px;
+}
+.foot-option-container .TOS-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.foot-option-container .TOS-container div a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.foot-option-container .TOS-container div a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    transition: .3s;
+}
+.foot-option-container .newsletter-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.foot-option-container .newsletter-container input{
+    height: 30px;
+}
+.foot-option-container .newsletter-container .input-mail:focus{
+    box-shadow: 10px 10px 2px gray;
+    transition: .3s;
+}
+.foot-option-container .newsletter-container .sub-newsletter:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 7px 7px 2px gray;
+    transition: .3s;
+}
+footer .copyright-container{
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+}
